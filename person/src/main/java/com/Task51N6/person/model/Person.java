@@ -19,10 +19,10 @@ public class Person {
     @Id @GeneratedValue
     private int id;
 
-    @NonNull String firstname;
-    @NonNull String surname;
-    @NonNull String lastname;
-    @NonNull LocalDate birthday;
+    @NonNull private String firstname;
+    @NonNull private String surname;
+    @NonNull private String lastname;
+    @NonNull private LocalDate birthday;
     @NonNull private String location;
 
     public Person(@NonNull String firstname,
