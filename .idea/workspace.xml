@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c644877-9f17-4a9d-8d37-d1614e299e1f" name="Changes" comment="First">
-      <change beforePath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/model/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/config/LocationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/config/LocationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/location/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/testdb.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/config/PersonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/config/PersonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/person/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/src/main/java/com/Task51N6/weather/configuration/WeatherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather/src/main/java/com/Task51N6/weather/configuration/WeatherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +51,12 @@
     &quot;last_opened_file_path&quot;: &quot;D:/JAVA/CourseJAVA/Task51-6/Project&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Task51N6.location.model" />
+      <recent name="com.Task51N6.person.model" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -99,11 +117,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DiscoveryServerApplication" />
+      <item itemvalue="Application.LocationApplication" />
+      <item itemvalue="Application.WeatherApplication" />
+      <item itemvalue="Application.PersonApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WeatherApplication" />
         <item itemvalue="Application.PersonApplication" />
         <item itemvalue="Application.LocationApplication" />
+        <item itemvalue="Application.WeatherApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>
@@ -125,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720288172497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First">
+      <option name="closed" value="true" />
+      <created>1720299262905</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720299262905</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

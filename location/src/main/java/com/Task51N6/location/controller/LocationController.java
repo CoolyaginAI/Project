@@ -1,6 +1,7 @@
 package com.Task51N6.location.controller;
 
 import com.Task51N6.location.model.Location;
+import com.Task51N6.location.model.Main;
 import com.Task51N6.location.model.Weather;
 import com.Task51N6.location.repository.GeodataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,8 +45,8 @@ public class LocationController {
 
         if (geodata.isPresent()) {
             geodata.get().setName(location.getName());
-            geodata.get().setLat(location.getLat());
-            geodata.get().setLon(location.getLon());
+            geodata.get().setLatitude(location.getLatitude());
+            geodata.get().setLongitude(location.getLongitude());
             repository.save(repository.findByName(name).get());
             return HttpStatus.OK;
         }
@@ -69,15 +70,15 @@ public class LocationController {
 
 
     @GetMapping("/location/weather")
-    public Optional<Weather> redirectRequestWeather(@RequestParam String name) {
+    public Optional<Main> redirectRequestWeather(@RequestParam String name) {
 
         Optional<Location> geodata = repository.findByName(name);
-        Optional<Weather> resultWeather = Optional.empty();
+        Optional<Main> resultWeather = Optional.empty();
 
         if (geodata.isPresent()) {
             String url = String.format("http://localhost:8082/weather?lat=%s&lon=%s",
-                    geodata.get().getLat(), geodata.get().getLon());
-            resultWeather = Optional.of(restTemplate.getForObject(url, Weather.class));
+                    geodata.get().getLatitude(), geodata.get().getLongitude());
+            resultWeather = Optional.of(restTemplate.getForObject(url, Main.class));
         }
 
         return  resultWeather;

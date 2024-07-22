@@ -1,6 +1,7 @@
 package com.Task51N6.person.controller;
 
 
+import com.Task51N6.person.model.Main;
 import com.Task51N6.person.model.Person;
 import com.Task51N6.person.model.Weather;
 import com.Task51N6.person.repository.PersonRepository;
@@ -72,11 +73,11 @@ public class PersonController {
     }
 
     @GetMapping("/person/{id}/weather")
-    public ResponseEntity<Weather> getWeatherPerson(@PathVariable int id) {
+    public ResponseEntity<Main> getWeatherPerson(@PathVariable int id) {
         if (personRepository.existsById(id)) {
             String location = personRepository.findById(id).get().getLocation();
-            Weather weather = restTemplate.getForObject(
-                    "http://localhost:8083/location/weather?name=" + location, Weather.class);
+            Main weather = restTemplate.getForObject(
+                    "http://localhost:8083/location/weather?name=" + location, Main.class);
             return new ResponseEntity(weather, HttpStatus.OK);
         }
         return new ResponseEntity(null, HttpStatus.NOT_FOUND);
